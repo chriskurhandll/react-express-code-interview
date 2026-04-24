@@ -27,4 +27,16 @@ On the command prompt run the following commands:
 UI URL:  http://localhost:3000/
 API URL: http://localhost:3001/api
 
-CORS is enabled on the server so API calls from UI will succeed.# react-express-code-interview
+CORS is enabled on the server so API calls from UI will succeed.
+
+### 4. Server Commands
+
+From the `server` directory:
+
+```bash
+npm run start           # start dev server
+npm run build           # compile TypeScript
+npm run typecheck       # type check without emitting
+npm test                # run tests
+npm run test:coverage   # run tests with coverage report
+```

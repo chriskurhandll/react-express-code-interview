@@ -1,7 +1,7 @@
 /.idea
 **/node_modules
 /logs
-/dist
+**/dist
 **/package-lock.json
 
 npm-debug.log

@@ -11,7 +11,7 @@ app.set('port',  process.env.APP_PORT || 3001);
 app.set('host',  process.env.APP_HOST || 'localhost');
 
 app.use(cors());
-app.use(morgan('tiny'));
+app.use(morgan('tiny', { skip: () => process.env.NODE_ENV === 'test' }));
 app.use(bodyParser.json());
 
 export default app;

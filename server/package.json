@@ -4,8 +4,11 @@
   "description": "Express/React Application Boilerplate ",
   "author": "Chris Kurhan chris.kurhan@dllgroup.com",
   "scripts": {
-    "start": "npx nodemon ./src/app.ts",
-    "build": "npx tsc"
+    "start": "npx nodemon ./src/server.ts",
+    "build": "npx tsc",
+    "typecheck": "npx tsc --noEmit",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,16 @@
     "express": "^4.19.2",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",
+    "pino": "^9.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "pino-pretty": "^13.0.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.3"
   }
 }
