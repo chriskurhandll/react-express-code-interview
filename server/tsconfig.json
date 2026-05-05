@@ -9,13 +9,18 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "node_modules/*",
-        "src/types/*"
-      ]
-    }
+      "@/*": ["src/*"],
+      "*": ["node_modules/*", "src/types/*"],
+    },
   },
   "include": [
-    "src/**/*"
-  ]
+    "src/**/*",
+    "__tests__/**/*",
+    "../shared/src/**/*"
+  ],
+  "ts-node": {
+      "transpileOnly": true,
+      "files": true,
+      "require": ["tsconfig-paths/register"]
+  },
 }
