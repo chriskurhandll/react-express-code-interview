@@ -1,0 +1,9 @@
+{
+  "name": "react-express-code-interview",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ]
+}

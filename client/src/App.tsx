@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
+import { UsersPage } from "@/user";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div className="min-h-screen bg-gray-50">
+      <UsersPage />
     </div>
   );
 }

@@ -1,23 +1,24 @@
 {
-  "name": "client",
+  "name": "@react-express-code-interview/client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/node": "^16.18.106",
+    "@tailwindcss/vite": "^4.2.4",
+    "@tanstack/react-query": "^5.100.9",
+    "@tanstack/react-table": "^8.21.3",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "axios": "^1.7.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "tailwindcss": "^4.2.4",
+    "typescript": "^5.5.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.10"
   }
 }
